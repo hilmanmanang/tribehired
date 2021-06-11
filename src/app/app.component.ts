@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tribehired';
+  post: string = 'https://jsonplaceholder.typicode.com/posts';
+  dataAll: any = [];
+
+  constructor(
+    private http: HttpClient
+  ) {}
+
+  getData() {
+    this.http.get(this.post).subscribe(res => {
+      console.log(res)
+      this.dataAll = res
+    })
+  }
 }
