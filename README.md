@@ -9,3 +9,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3. Run `npm i`
 4. Run `ng serve` then navigate to `http://localhost:4200/`
 
+![image](https://user-images.githubusercontent.com/59623098/121782572-bd0e3280-cbdc-11eb-8b5d-332f1064f4cb.png)
