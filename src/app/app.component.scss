@@ -63,6 +63,11 @@
     cursor: pointer;
 }
 
+.border-profile {
+    border-right: 1px solid white;
+    min-height: 920px;
+}
+
 @media (max-width: 768px) {
     .references-profile {
         text-align: right;
@@ -74,5 +79,10 @@
 
     .profile-text {
         text-align: center;
+    }
+
+    .border-profile {
+        border-bottom: 1px solid white;
+        min-height: 100%;
     }
 }
