@@ -22,4 +22,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 4. Also able to filter for Name, Email or Body comments
 ![image](https://user-images.githubusercontent.com/59623098/121782819-0ca12e00-cbde-11eb-9c6f-99ceeec2ba11.png)
 
-Enjoy..
+## Additional Info
+1. Also support mobile view (responsive website)
+![image](https://user-images.githubusercontent.com/59623098/121782927-9d780980-cbde-11eb-84e1-e71958310cd5.png)
+
+2. Also including my personal social media and resume to download for further opportunities.
+
+
+Thank you. Enjoy..
