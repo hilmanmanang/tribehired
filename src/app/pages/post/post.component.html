@@ -1,1 +1,24 @@
-<p>post works!</p>
+<h3 class="title-posts">Post</h3>
+<div class="card" *ngFor="let item of postData" style="margin: 5px;">
+    <div class="card-body row">
+        <div class="col-sm-2 position-img">
+            <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
+        </div>
+        <div class="col-sm-10">
+            <h6>{{item.title}}</h6>
+            <small>{{item.body}}</small>
+        </div>
+    </div>
+</div>
+<h3 class="title-posts">Comments</h3>
+<div class="card" *ngFor="let item of postData" style="margin: 5px;">
+    <div class="card-body row">
+        <div class="col-sm-2 position-img">
+            <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
+        </div>
+        <div class="col-sm-10">
+            <h6>{{item.title}}</h6>
+            <small>{{item.body}}</small>
+        </div>
+    </div>
+</div>

@@ -8,7 +8,7 @@
             <h6>{{item.title}}</h6>
             <small>{{item.body}}</small>
             <div class="view-post">
-                <span class="text-view" (click)="getPost(item.id)">View post and comments</span>
+                <span class="text-view" (click)="getPost(item.id, item.userId)">View post and comments</span>
             </div>
         </div>
     </div>

@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+    parentData: any
+
     openLink(acc: any) {
         switch (acc) {
             case 'li': window.open('https://www.linkedin.com/in/muhammad-hilman-bin-ahmad-a16011185/');

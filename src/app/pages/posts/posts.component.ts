@@ -14,10 +14,6 @@ export class PostsComponent implements OnInit {
 	postData: any = [];
 
 	ngOnInit(): void {
-		this.getPostsData();
-	}
-
-	getPostsData() {
 		this.apiService.getPosts().subscribe(res => {
 			this.postData = res;
 			console.log(res)
@@ -26,7 +22,7 @@ export class PostsComponent implements OnInit {
 		})
 	}
 
-	getPost(id: any) {
+	getPost(id: any, userId: any) {
 		this.router.navigate([`/post/${id}`]);
 	}
 }
