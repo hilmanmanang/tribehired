@@ -11,5 +11,18 @@
     color: blue;
     font-size: 12px;
     text-align: right;
-    cursor: pointer;
+}
+
+.text-view {
+    cursor: pointer
+}
+
+.card:hover {
+    background-color: #d1dbffb2;
+    box-shadow: 7px 7px 7px #59ffcf;
+}
+
+.title-posts {
+    color: white;
+    margin: 20px 0;
 }

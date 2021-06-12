@@ -30,3 +30,39 @@
         margin: 30px;
     }
 }
+
+.references-profile {
+    color: white;
+    text-align: left;
+    margin: 20px 0;
+
+    i {
+        margin: 0 5px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    i:hover {
+        text-shadow: 4px 4px 4px #59ffcf;
+
+    }
+}
+
+.profile-text {
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .references-profile {
+        text-align: right;
+    }
+
+    .profile-left {
+        display: none;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+}

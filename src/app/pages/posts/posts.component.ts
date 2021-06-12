@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ApiService } from 'src/app/service/api.service';
 })
 export class PostsComponent implements OnInit {
 
-	constructor(private apiService: ApiService) { }
+	constructor(private apiService: ApiService, private router: Router) { }
 
 	postData: any = [];
 
@@ -25,4 +26,7 @@ export class PostsComponent implements OnInit {
 		})
 	}
 
+	getPost(id: any) {
+		this.router.navigate([`/post/${id}`]);
+	}
 }
