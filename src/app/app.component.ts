@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+    constructor(private router: Router) { }
 
     parentData: any
 
@@ -22,5 +25,9 @@ export class AppComponent {
             case 'tr': window.open('https://twitter.com/hilmanmanang');
                 break;
         }
+    }
+
+    home() {
+		this.router.navigate(['']);
     }
 }

@@ -17,11 +17,6 @@
     cursor: pointer
 }
 
-.card:hover {
-    background-color: #d1dbffb2;
-    box-shadow: 7px 7px 7px #59ffcf;
-}
-
 .title-posts {
     color: white;
     margin: 20px 0;
@@ -36,5 +31,31 @@
 
     h5 {
         margin-top: 10px;
+    }
+}
+
+hr {
+    opacity: 1;
+    color: white;
+}
+
+.search-filter {
+    margin: 5px 5px 25px 5px;
+    color: white;
+
+    div {
+        margin-top: 10px;
+    }
+}
+
+.flex-filter {
+    display: flex; 
+    justify-content: space-between;
+}
+
+@media (max-width: 1035px) {
+    .flex-filter {
+        align-items: flex-end;
+        flex-direction: column;
     }
 }

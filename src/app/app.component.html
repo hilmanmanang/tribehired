@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark">
 	<div class="container-fluid">
-		<span class="navbar-brand mb-0 h1">tribe<b>hired</b> assessement</span>
+		<span class="navbar-brand mb-0 h1" (click)="home()">tribe<b>hired</b> assessement</span>
 		<span class="profile-left">
 			@hilmanmanang
 			<img class="pic-hilman" src="./../assets/hilman-passport.jpg">
@@ -18,6 +18,12 @@
 				Hi, I am Muhammad Hilman Bin Ahmad,
 				2 years+ of experience in Angular Frontend Developer. 
 				Checkout my profile below. 
+				<br>
+				<a href="./../assets/HILMAN-RESUME.pdf" download>Download Resume</a>
+				<br>
+				<a href="info">Apps Info</a>
+				<br>
+				<a href="reference">References</a>
 			</div>
 			<div class="references-profile">
 				<i class="fa fa-linkedin-square" aria-hidden="true" (click)="openLink('li')"></i>
@@ -31,7 +37,7 @@
 			<router-outlet></router-outlet>
 		</div>
 	</div>
-	<div class="bg-dark footer-post">
-		<div>Develop by Hilman Ahmad 2021</div> 
-	</div>
+</div>
+<div class="bg-dark footer-post">
+	<div>Develop by Hilman Ahmad 2021</div> 
 </div>

@@ -26,7 +26,7 @@ export class PostsComponent implements OnInit {
 		})
 	}
 
-	getPost(id: any, userId: any) {
+	getPost(id: any) {
 		this.router.navigate([`/post/${id}`]);
 	}
 }

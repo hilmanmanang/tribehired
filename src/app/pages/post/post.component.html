@@ -17,15 +17,34 @@
             </div>
         </div>
     </div>
+    <hr>
     <h3 class="title-posts">Comments ({{commentsData?.length}})</h3>
-    <div class="card" *ngFor="let item of commentsData">
+    <div class="search-filter">
+        <h6>Filter by:</h6>
+        <div class="flex-filter">
+            <div>Name: <input [(ngModel)]="searchName"></div>
+            <div>Email: <input [(ngModel)]="searchEmail"></div>
+            <div>Body: <input [(ngModel)]="searchBody"></div>
+        </div>
+    </div>
+    <div class="card" *ngFor="let item of commentsData | nameFilter:searchName | emailFilter:searchEmail | bodyFilter:searchBody">
         <div class="card-body row">
-            <div class="col-sm-2 position-img">
-                s
+            <div class="col-sm-2">
+                <b><small>Name:</small></b>
             </div>
             <div class="col-sm-10">
-                <h6>{{item.name}}</h6>
+                <small>{{item.name}}</small>
+            </div>
+            <div class="col-sm-2">
+                <b><small>Email:</small></b>
+            </div>
+            <div class="col-sm-10">
                 <small>{{item.email}}</small>
+            </div>
+            <div class="col-sm-2">
+                <b><small>Body:</small></b>
+            </div>
+            <div class="col-sm-10">
                 <small>{{item.body}}</small>
             </div>
         </div>

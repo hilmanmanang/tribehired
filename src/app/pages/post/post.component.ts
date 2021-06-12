@@ -15,6 +15,9 @@ export class PostComponent implements OnInit {
 	postData: any;
 	commentsData: any;
 	loading: boolean = false;
+	searchName: any;
+	searchEmail: any;
+	searchBody: any;
 
 	ngOnInit(): void {
 		this.loading = true;
