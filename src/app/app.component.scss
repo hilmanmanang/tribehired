@@ -1,9 +1,32 @@
 .pic-hilman {
     width: 25px;
-    border-radius: 20px;
+    border-radius: 100%;
 }
 
 .profile-left {
     float: right; 
     color: white;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.content-post {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-bg {
+    background-color: #25384b;
+}
+
+.profile-hilman {
+    text-align: center;
+
+    img {
+        width: 130px;
+        border-radius: 100%;
+        margin: 30px;
+    }
 }

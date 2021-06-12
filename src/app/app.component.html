@@ -1,16 +1,29 @@
 <nav class="navbar navbar-dark bg-dark">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">tribe<b>hired</b> assessement</span>
-    <span class="profile-left">hilmanahmad
-      <img class="pic-hilman" src="./../assets/hilman-passport.jpg">
-    </span>
-  </div>
-  
+	<div class="container-fluid">
+		<span class="navbar-brand mb-0 h1">tribe<b>hired</b> assessement</span>
+		<span class="profile-left">@hilmanmanang
+			<img class="pic-hilman" src="./../assets/hilman-passport.jpg">
+		</span>
+	</div>
 </nav>
-<button class="btn btn-primary" (click)="getData()">this</button>
-<div class="card" *ngFor="let item of dataAll">
-  <div class="card-body">
-    <div><b>TITLE:</b> {{item.title}}</div>
-    <div><b>BODY:</b> {{item.body}}</div>
-  </div>
+<div class="color-bg">
+	<div class="row content-post">
+		<div class="col-md-3">
+			<div class="profile-hilman">
+				<img src="./../assets/hilman-passport.jpg">
+				
+			</div>
+			<div style="color: white;">
+				Hello there, my name is Muhammad Hilman Bin Ahmad. 
+				2 years+ of experience in Angular Frontend Developer. 
+				Checkout my profile below. 
+			</div>
+			<div>
+				<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
 </div>
