@@ -1,24 +1,33 @@
 <h3 class="title-posts">Post</h3>
-<div class="card" *ngFor="let item of postData" style="margin: 5px;">
-    <div class="card-body row">
-        <div class="col-sm-2 position-img">
-            <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
-        </div>
-        <div class="col-sm-10">
-            <h6>{{item.title}}</h6>
-            <small>{{item.body}}</small>
-        </div>
+<div class="card" *ngIf="loading">
+    <div class="card-body loading-card">
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        <h5>Loading. Please wait...</h5>
     </div>
 </div>
-<h3 class="title-posts">Comments</h3>
-<div class="card" *ngFor="let item of postData" style="margin: 5px;">
-    <div class="card-body row">
-        <div class="col-sm-2 position-img">
-            <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
+<div *ngIf="!loading">
+    <div class="card" *ngFor="let item of postData">
+        <div class="card-body row">
+            <div class="col-sm-2 position-img">
+                <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
+            </div>
+            <div class="col-sm-10">
+                <h6>{{item.title}}</h6>
+                <small>{{item.body}}</small>
+            </div>
         </div>
-        <div class="col-sm-10">
-            <h6>{{item.title}}</h6>
-            <small>{{item.body}}</small>
+    </div>
+    <h3 class="title-posts">Comments ({{commentsData?.length}})</h3>
+    <div class="card" *ngFor="let item of commentsData">
+        <div class="card-body row">
+            <div class="col-sm-2 position-img">
+                s
+            </div>
+            <div class="col-sm-10">
+                <h6>{{item.name}}</h6>
+                <small>{{item.email}}</small>
+                <small>{{item.body}}</small>
+            </div>
         </div>
     </div>
 </div>

@@ -1,14 +1,22 @@
 <h3 class="title-posts">Posts ({{postData?.length}})</h3>
-<div class="card" *ngFor="let item of postData" style="margin: 5px;">
-    <div class="card-body row">
-        <div class="col-sm-2 position-img">
-            <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
-        </div>
-        <div class="col-sm-10">
-            <h6>{{item.title}}</h6>
-            <small>{{item.body}}</small>
-            <div class="view-post">
-                <span class="text-view" (click)="getPost(item.id, item.userId)">View post and comments</span>
+<div class="card" *ngIf="loading">
+    <div class="card-body loading-card">
+        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        <h5>Loading. Please wait...</h5>
+    </div>
+</div>
+<div *ngIf="!loading">
+    <div class="card" *ngFor="let item of postData">
+        <div class="card-body row">
+            <div class="col-sm-2 position-img">
+                <img class="img-size" src="../../../assets/userImage/{{item.userId}}.png" alt="{{item.userId}}">
+            </div>
+            <div class="col-sm-10">
+                <h6>{{item.title}}</h6>
+                <small>{{item.body}}</small>
+                <div class="view-post">
+                    <span class="text-view" (click)="getPost(item.id, item.userId)">View post and comments</span>
+                </div>
             </div>
         </div>
     </div>

@@ -12,11 +12,15 @@ export class PostsComponent implements OnInit {
 	constructor(private apiService: ApiService, private router: Router) { }
 
 	postData: any = [];
+	loading: boolean = false;
 
 	ngOnInit(): void {
+		this.loading = true;
 		this.apiService.getPosts().subscribe(res => {
-			this.postData = res;
-			console.log(res)
+			if (res) {
+				this.postData = res;
+				this.loading = false;
+			}
 		}, error => {
 			console.log(error)
 		})
