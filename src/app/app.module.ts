@@ -10,8 +10,7 @@ import { PostComponent } from './pages/post/post.component';
 import { NamePipe } from './pipe/name.pipe';
 import { EmailPipe } from './pipe/email.pipe';
 import { BodyPipe } from './pipe/body.pipe';
-import { InfoComponent } from './pages/info/info.component';
-import { ReferenceComponent } from './pages/reference/reference.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { ReferenceComponent } from './pages/reference/reference.component';
     NamePipe,
     EmailPipe,
     BodyPipe,
-    InfoComponent,
-    ReferenceComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,

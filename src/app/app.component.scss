@@ -68,6 +68,15 @@
     min-height: 920px;
 }
 
+.icon-fa {
+    color: white;
+    cursor: pointer;
+}
+
+.icon-fa:hover {
+    text-shadow: 4px 4px 4px #59ffcf;
+}
+
 @media (max-width: 768px) {
     .references-profile {
         text-align: right;

@@ -22,8 +22,6 @@ export class AppComponent {
                 break;
             case 'ig': window.open('https://www.instagram.com/hilmanmanang/');
                 break;
-            case 'tr': window.open('https://twitter.com/hilmanmanang');
-                break;
         }
     }
 
